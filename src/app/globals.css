@@ -2,25 +2,25 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #222222;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bf-blue: #0f65ef;
+  --color-bf-red: #ee3322;
+  --color-bf-green: #68af15;
+  --color-bf-orange: #f47f16;
+  --color-bf-gray-dark: #222222;
+  --color-bf-gray-medium: #aaaaaa;
+  --color-bf-gray-light: #f4f4f4;
+  --font-sans: "Proxima Nova", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: var(--font-calistoga);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
